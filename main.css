@@ -1,4 +1,23 @@
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
+    font-weight: 400;
+}
+
+body {padding: 40px;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p, ul {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: inherit;
+}
+
+article > p.important {
+    color: red;
 }

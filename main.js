@@ -17,7 +17,10 @@
 
 
         // Second exercice
-        
+        let articleImportant = document.querySelector("article > p.important");
+
+        articleImportant.innerHTML = "<pre></pre>";
+        articleImportant.textContent = "I'm testing the super textContent function.";
 
         // Resources loaded
         console.log(loading);
