@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events JS | Openclassrooms Javascript For The Web</title>
+    <title>Forms JS | Openclassrooms Javascript For The Web</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/forms.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Events JS | Openclassrooms Javascript For The Web</h1>
+    <h1>Forms JS | Openclassrooms Javascript For The Web</h1>
 
     <nav>
         <ul>
@@ -21,16 +21,28 @@
     </nav>
 
     <!-- Exercice on events -->
-		<article id="parent">
-			<a class="link" id="child" href="#">Cliquez ici</a>
-			<p>Battle d'événement !</p>
-			Parent : <span id="parent-count">0</span>
-			Enfant : <span id="child-count">0</span>
-		</article>
+		<form>
+			<div><input type="text" id="name" placeholder="Nom" /></div>
+			<div>
+				<select id="gender">
+				<option>Choisissez une valeur</option>
+				<option value="male">Homme</option>
+				<option value="female">Femme</option>
+				<option value="other">Autre</option>
+				</select>  
+			</div>
+		</form>
+
+		<div id="result">
+			Nom : <span id="res-name"></span><br />
+			Genre : <span id="res-gender"></span><br />
+			Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+		</div>
     <!-- End exercice on events -->
 
     <!-- JS Scripts -->
-        <script src="js/events.js"></script>
+        <script src="js/forms.js"></script>
     <!-- End JS Scripts -->
 </body>
 </html>
+

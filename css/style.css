@@ -17,7 +17,3 @@ p, ul {
     font-size: 0.875rem;
     font-weight: inherit;
 }
-
-article > p.important {
-    color: red;
-}

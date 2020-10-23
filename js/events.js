@@ -12,6 +12,11 @@
 			let parentCount = document.getElementById("parent-count");
 			i++;
 			parentCount.innerHTML = i;
+			const x = event.offsetX;
+			const y = event.offsetY;
+			console.log(event, typeof event);
+			console.log(x, typeof x);
+			console.log(y, typeof y);
 		});
 
 		child.addEventListener('click', function(event) {
@@ -20,5 +25,6 @@
 			j++;
 			childCount.innerHTML = j;
 			event.stopPropagation();
+			console.log(event, typeof event);
 		});
     });
