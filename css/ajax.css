@@ -1,4 +1,4 @@
-#ask-weather {
+/* #ask-weather {
 	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -8,4 +8,17 @@
 #weather-result {
 	text-align: center;
 	font-size: 24px;
+}   */
+
+
+
+
+form {
+	margin: auto;
+	max-width: 300px;
+	margin-top: 40px;
+}
+
+.result {
+	text-align: center;
 }  
