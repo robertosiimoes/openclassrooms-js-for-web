@@ -1,17 +1,30 @@
 // Script JS
 
-	// On crée la requête et une variable data qui va recevoir la div accueillant la réponse de la requête
-	var xhr = new XMLHttpRequest();
-	var data = document.getElementById('data');
+	// Storing button into variable
+	var btnAskWeather = document.getElementById('ask-weather');
 
-	xhr.onreadystatechange = function() {
+	// Listening click event on that button
+	btnAskWeather.addEventListener('click', function(e) {
 
-		if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-
-			var response = JSON.parse(this.responseText);
-			data.innerHTML = "<pre>" + response.current_condition.condition + "</pre>";
+		// Preventing the default behaviour
+		e.preventDefault();
+		
+		// Creating the request
+		var xhr = new XMLHttpRequest();
+		var weatherResult = document.getElementById('weather-result');
+	
+		// Checking the status changing
+		xhr.onreadystatechange = function() {
+			
+			if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+				var response = JSON.parse(xhr.responseText);
+				weatherResult.innerHTML = response.current_condition.condition;
+			} else {
+				console.log("There is an error !");
+			}
 		}
-	};
-
-	xhr.open("GET", "https://www.prevision-meteo.ch/services/json/paris");
-	xhr.send();
+	
+		// Fetching the Weather API
+		xhr.open('GET', 'https://www.prevision-meteo.ch/services/json/paris', true);
+		xhr.send();
+	});
