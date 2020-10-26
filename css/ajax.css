@@ -13,7 +13,7 @@
 
 
 
-form {
+/* form {
 	margin: auto;
 	max-width: 300px;
 	margin-top: 40px;
@@ -21,4 +21,24 @@ form {
 
 .result {
 	text-align: center;
-}  
+}   */
+
+
+
+
+form {
+	max-width: 300px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+input[type="submit"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#result {
+	margin-top 40px;
+	text-align: center;
+}
+  
