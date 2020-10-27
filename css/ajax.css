@@ -1,44 +1,74 @@
-/* #ask-weather {
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: block;
-}
-  
-#weather-result {
-	text-align: center;
-	font-size: 24px;
-}   */
+/* Exercice 01 : How we can fetch weather data with Ajax */
+
+	/*
+	
+		#ask-weather {
+			margin: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			display: block;
+		}
+		
+		#weather-result {
+			text-align: center;
+			font-size: 24px;
+		}
+	
+	*/
 
 
 
+/* Exercice 02 : How to verify user data forms */
 
-/* form {
-	margin: auto;
-	max-width: 300px;
-	margin-top: 40px;
-}
+	/*
+	
+		form {
+			margin: auto;
+			max-width: 300px;
+			margin-top: 40px;
+		}
 
-.result {
-	text-align: center;
-}   */
+		.result {
+			text-align: center;
+		}
+	
+	*/
 
 
 
+/* Exercice 03 : How to save data on web services */
 
-form {
-	max-width: 300px;
-	margin: auto;
-	margin-top: 30px;
-}
+	/*
 
-input[type="submit"] {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+		form {
+			max-width: 300px;
+			margin: auto;
+			margin-top: 30px;
+		}
 
-#result {
-	margin-top 40px;
-	text-align: center;
-}
-  
+		input[type="submit"] {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#result {
+			margin-top 40px;
+			text-align: center;
+		}
+
+	*/
+
+
+
+/* Exercice 04 : How we can use Callbacks, Promises and Async_Await */
+
+	/*
+
+		#result {
+			margin: auto;
+			margin-top: 40px;
+			font-size: 24px;
+			text-align: center;
+		}
+
+	*/
