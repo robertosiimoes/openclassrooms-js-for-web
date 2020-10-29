@@ -148,3 +148,29 @@
 			})
 			
 	*/
+
+
+
+	async function func1() {
+		return 3;
+	}
+	
+	async function func2() {
+		return 4;
+	}
+	
+	var promiseRes = 
+		Promise
+			.all([func1(), func2()])
+			.then(function(results) {
+				return results.reduce(function(acc, res) {
+					var multiple = acc * res;
+					console.log(multiple, typeof multiple);
+					console.log(acc, typeof acc);
+					console.log(res, typeof res);
+					return multiple;
+				}, 2);
+			})
+			.then(function(time) {
+				return setTimeout(callback, time * 1000);
+			});
